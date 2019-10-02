@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/textSearch"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="2dp"
+        android:hint="City State
+
+"></EditText>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:textSize="10dp"
+        android:layout_alignParentRight="true">
+
+    </Button>
+</LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/NameCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City :"
+            android:textSize="25dp"></TextView>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:id="@+id/NameCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country :"
+        android:textSize="25dp"></TextView>
+
+       <ImageView
+           android:id="@+id/imageIcon"
+           android:layout_marginTop="2dp"
+           android:layout_gravity="center"
+           android:layout_width="150dp"
+           android:layout_height="150dp"></ImageView>
+    <TextView
+        android:id="@+id/Temp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#f20"
+        android:textSize="35dp"
+        android:text="Temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:id="@+id/Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="Status"
+        android:textSize="30dp"></TextView>
+    <LinearLayout
+android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/rain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+            <TextView
+                android:id="@+id/textHumidity"
+                android:textSize="20dp"
+                android:text="Humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/cloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+            <TextView
+                android:id="@+id/textCloud"
+                android:textSize="20dp"
+                android:text="Cloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/windmill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+            <TextView
+                android:id="@+id/textSpeedWind"
+                android:textSize="20dp"
+                android:text="Wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/airquality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+            <TextView
+                android:id="@+id/textAirQuality"
+                android:textSize="20dp"
+                android:text="Quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:id="@+id/textDay"
+        android:textSize="20dp"
+        android:text="Date Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <Button
+        android:id="@+id/changeActivity"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:text="The next days"
+        android:layout_height="wrap_content"></Button>
+</LinearLayout>
